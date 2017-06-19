@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hello React</title>
+    </head>
+    <body>
+        <div id="app">
+
+        </div>
+        <script type="text/javascript" src="js/react.js"></script>
+        <script type="text/javascript" src="js/react-dom.js"></script>
+        <script type="text/javascript">
+            ReactDOM.render(
+                React.DOM.h1(
+                    null,
+                    React.DOM.span(null,
+                        React.DOM.em({style: {
+                            background: "black",
+                        },
+                        }, "Hell"),
+                        "o"
+                    ),
+                    " World!"
+                ),
+                document.getElementById("app")
+            );
+        </script>
+    </body>
+</html>
